@@ -1,0 +1,1 @@
+right('000' + convert(varchar(10),@soma/60),3) +':' +RIGHT('00' + CONVERT(varchar(10),convert(int,round((@soma/60.0 - @soma/60) * 60,1))),2) 

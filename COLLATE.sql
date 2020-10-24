@@ -1,0 +1,1 @@
+collate DATABASE_DEFAULT

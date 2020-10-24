@@ -1,0 +1,1 @@
+select convert (int, convert( decimal,convert (varchar( 10), getdate(), 112)) /10000 - convert( decimal,convert (varchar( 10), datamudanca , 112)) /10000 )

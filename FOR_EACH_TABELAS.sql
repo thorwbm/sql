@@ -1,0 +1,1 @@
+sp_msforeachtable 'ALTER TABLE ? ENABLE TRIGGER all'
