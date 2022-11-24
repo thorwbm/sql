@@ -1,1 +1,0 @@
-replace(replace(((select pes.codpessoa for json path, root('universus_key')) ),'[',''),']','') 

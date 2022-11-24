@@ -1,0 +1,1 @@
+replace(replace(((select [campo] as [apelido] for json path, root('[root do json]')) ),'[',''),']','') 

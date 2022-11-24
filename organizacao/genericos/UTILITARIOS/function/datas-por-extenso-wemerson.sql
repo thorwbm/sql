@@ -1,5 +1,5 @@
 
-create FUNCTION dbo.wbm_dataExtenso(@data datetime, @diaSemana int) -- mostrar dia da semana diaSemana | 0 = nao e 1 = sim
+create FUNCTION dbo.fn_data_extenso(@data datetime, @diaSemana int) -- mostrar dia da semana diaSemana | 0 = nao e 1 = sim
 RETURNS VARCHAR(500)
 AS
 BEGIN
@@ -51,6 +51,6 @@ END
 
 
 
--- SELECT dbo.wbm_dataExtenso('2012-08-03', 0)
+-- SELECT dbo.fn_data_extenso('2012-08-03', 0)
 
 

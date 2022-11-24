@@ -1,7 +1,7 @@
 /*****************************************************************************************************************
-*                                                CAST PARA DATAS                                                 *
+*                                                 CURSOR BASICO                                                  *
 *                                                                                                                *
-*  TIPOS DE CAST PARA DATAS                                                                                      *
+*  CURSOR BASICO PARA CORRER UMA TABELA                                                                          *
 *                                                                                                                *
 *                                                                                                                *
 * BANCO_SISTEMA : GENERICO                                                                                       *
@@ -9,15 +9,16 @@
 * ALTERADO POR  : WEMERSON BITTORI MADURO                                                        DATA:08/12/2021 *
 ******************************************************************************************************************/
 
-SELECT   
-     CAST('2007-05-08 12:35:29. 1234567 +12:15' AS time(7)) AS 'time'   
-    , CAST('2007-05-08 12:35:29. 1234567 +12:15' AS time(0)) AS 'time curto'   
-    ,CAST('2007-05-08 12:35:29. 1234567 +12:15' AS date) AS 'date'   
-    ,CAST('2007-05-08 12:35:29.123' AS smalldatetime) AS   
-        'smalldatetime'   
-    ,CAST('2007-05-08 12:35:29.123' AS datetime) AS 'datetime'   
-    ,CAST('2007-05-08 12:35:29. 1234567 +12:15' AS datetime2(7)) AS   
-        'datetime2'  
-    ,CAST('2007-05-08 12:35:29.1234567 +12:15' AS datetimeoffset(7)) AS   
-        'datetimeoffset';  
+declare CUR_ cursor for 
+	SELECT [CAMPOS NA ORDEM DO SELECT] FROM 
+	open CUR_ 
+		fetch next from CUR_ into [CAMPOS NA ORDEM DO SELECT]
+		while @@FETCH_STATUS = 0
+			BEGIN
+				ACOES A SEREM TOMADAS
 
+
+			fetch next from CUR_ into [CAMPOS NA ORDEM DO SELECT]
+			END
+	close CUR_ 
+deallocate CUR_ 

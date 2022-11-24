@@ -1,8 +1,8 @@
 /*****************************************************************************************************************
 *                                                 FN_DATA_PTBR                                                   *
 *                                                                                                                *
-*  FUNCAO QUE RECEBE UMA DATA E UM SEPARADOR E RETORNA UM UMA STRING COM A DATA NO FORMATO DD(SEPARADOR)MM(SEPAR *
-* DOR)YYYY HH:MM:SS:mmm                                                                                          *
+*  FUNCAO QUE RECEBE UMA DATA E UM SEPARADOR E RETORNA UM UMA STRING COM A DATA NO FORMATO DD(SEPARADOR)         *
+*  MM(SEPARDOR)YYYY HH:MM:SS:mmm                                                                                 *
 *                                                                                                                *
 * BANCO_SISTEMA : GENERICO                                                                                       *
 * CRIADO POR    : WEMERSON BITTORI MADURO                                                        DATA:28/01/2020 *

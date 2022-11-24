@@ -8,4 +8,4 @@
 * AUTOR: WEMERSON BITTORI MADURO                                                                 DATA:09/11/2015 *
 ******************************************************************************************************************/
 
-alter table MovtoBanc with nocheck add constraint NDocDuplo unique([numdoc])
+alter table [tabela] with nocheck add constraint [unq_nomedaconstraint] unique(campos da constraint)
