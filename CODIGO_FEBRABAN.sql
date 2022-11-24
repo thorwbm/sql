@@ -1,3 +1,14 @@
+/*****************************************************************************************************************
+*                                        CRIA TABELA COM BANCOS FEBRABAN                                         *
+*                                                                                                                *
+*  SCRIPT PARA CRIAR TABELA COM OS BANCOS FEBRABAN                                                               *
+*                                                                                                                *
+*                                                                                                                *
+* BANCO_SISTEMA : GENERICO                                                                                       *
+* CRIADO POR    : WEMERSON BITTORI MADURO                                                        DATA:08/12/2021 *
+* ALTERADO POR  : WEMERSON BITTORI MADURO                                                        DATA:08/12/2021 *
+******************************************************************************************************************/
+
 select id = ROW_NUMBER() OVER ( ORDER BY banco), codigo_str = right('00' + convert(varchar(5), codigo),3), banco
 into bancos_banco
 from (

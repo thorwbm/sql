@@ -1,0 +1,1 @@
+replace(replace(((select codcidade for json path, root('universus_key')) ),'[',''),']','')

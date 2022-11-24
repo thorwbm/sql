@@ -13,3 +13,13 @@ LOCATION = 'srvfabriciolimasolucoes.database.windows.net', --Servidor logico no 
 DATABASE_NAME = 'database02',    --base que queremos acessar com a credencial Db02Credential
 CREDENTIAL = Db02Credential        --Db02Credential - credencial que criamos para acessar a base database02
 ) ;
+
+
+
+
+CREATE EXTERNAL TABLE [dbo].xxxxxxx
+(
+	/* campos da tabela original */ nome tipo requerido
+)
+WITH (DATA_SOURCE = dts_nome_dts,SCHEMA_NAME = N'dbo',OBJECT_NAME = N'nome_original_table')
+GO

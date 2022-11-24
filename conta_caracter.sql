@@ -1,7 +1,7 @@
 /*****************************************************************************************************************
-*                                               FN_RETIRAR_ACENTO                                                *
+*                                               FN_CONTA_CARACTER                                                *
 *                                                                                                                *
-*  FUNCAO QUE REMOVE OS ACENTOS DE UM TEXTO PASSADO COMO PARAMENTRO                                              *
+*  FUNCAO QUE RECEBE UMA STRING E UM CARACTER EM ESPECIFICO QUE SERA CONTADO DENTRO DESTA STRING                 *
 *                                                                                                                *
 *                                                                                                                *
 * BANCO_SISTEMA : GENERICO                                                                                       *
@@ -9,13 +9,10 @@
 * ALTERADO POR  : WEMERSON BITTORI MADURO                                                        DATA:08/12/2021 *
 ******************************************************************************************************************/
 
-Create or alter Function FN_retirar_acento (@texto varchar(max))
-Returns varchar(max)
-as
-Begin
-   Declare @cRetorno varchar(500)
-   
-   Set @cRetorno = @texto collate sql_latin1_general_cp1251_cs_as   
-   Return ltrim(rtrim(@cRetorno))
-   
-End
+create function fn_conta_caracter (@string varchar(max),@caracter varchar(1))
+returns int 
+as 
+begin
+	return len(@string) - len(replace(@string, @caracter, ''))
+end 
+

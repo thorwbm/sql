@@ -1,3 +1,15 @@
+/*****************************************************************************************************************
+*                                           CRIACAO DE TABELA DE LOG                                             *
+*                                                                                                                *
+*  PROCESSO DE CRIACAO DE TABELA DE LOG                                                                          *
+*                                                                                                                *
+*                                                                                                                *
+* BANCO_SISTEMA : GENERICO                                                                                       *
+* CRIADO POR    : WEMERSON BITTORI MADURO                                                        DATA:08/12/2021 *
+* ALTERADO POR  : WEMERSON BITTORI MADURO                                                        DATA:08/12/2021 *
+******************************************************************************************************************/
+
+
 --##############################################################################
 -- criar view 
 CREATE   VIEW VW_ESTRUTURA_TABELA AS   

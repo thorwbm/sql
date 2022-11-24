@@ -1,8 +1,8 @@
 /*****************************************************************************************************************
 *                                               CRIA TABELA DATAS                                                *
 *                                                                                                                *
-* CRIA UMA TABELA COM O NOME TDATAS ONDE TEMOS EM CADA REGISTRO UM DIA DO ANO ESCOLHIDO APARTIDA DE UMA DATA TAM *
-* BEM ESCOLHIDA.                                                                                                 *
+* CRIA UMA TABELA COM O NOME TDATAS ONDE TEMOS EM CADA REGISTRO UM DIA DO ANO ESCOLHIDO APARTIR DA DE UMA DATA   *
+*                                                                                                                *
 *                                                                                                                *
 * BANCO_SISTEMA: GENERICO                                                                                        *
 * AUTOR: WEMERSON BITTORI MADURO                                                                 DATA:09/11/2015 *

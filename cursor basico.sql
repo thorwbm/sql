@@ -1,10 +1,12 @@
 /*****************************************************************************************************************
-*                                          IMPORTACAO DA CARGA HORARIA                                           *
+*                                                 CURSOR BASICO                                                  *
 *                                                                                                                *
-* CURSOR QUE CORRE A TABELA TMP_CARGA_HORARIA E INSERE OS VALORES NA TABELA PFSALCMP.                            *
-* OS ERROS IRAM SER INSERIDOS EM UMA TABELA DE LOG COM AS INFORMACOES SEPRADAS POR VIRGULA                       *
+*  CURSOR BASICO PARA CORRER UMA TABELA                                                                          *
 *                                                                                                                *
-* AUTOR: WEMERSON BITTORI MADURO                                                                 DATA:14/01/2014 *
+*                                                                                                                *
+* BANCO_SISTEMA : GENERICO                                                                                       *
+* CRIADO POR    : WEMERSON BITTORI MADURO                                                        DATA:08/12/2021 *
+* ALTERADO POR  : WEMERSON BITTORI MADURO                                                        DATA:08/12/2021 *
 ******************************************************************************************************************/
 
 declare CUR_ cursor for 

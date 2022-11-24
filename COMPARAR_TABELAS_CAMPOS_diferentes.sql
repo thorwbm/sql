@@ -8,10 +8,10 @@
 * CRIADO POR    : WEMERSON BITTORI MADURO                                                                         DATA:10/10/2019 *
 * ALTERADO POR  : WEMERSON BITTORI MADURO                                                                         DATA:10/10/2019 *
 **********************************************************************************************************************************/
--- EXEC SP_COMPARAR_TABELAS_CAMPO_A_CAMPO usuarios_hierarquia, LOG_usuarios_hierarquia
+-- EXEC SP_diferenca_campos academico_turno, LOG_academico_turno
 
 
-alter  PROCEDURE SP_diferenca_campos  
+create  PROCEDURE SP_diferenca_campos  
    @TAB1 VARCHAR(100), @TAB2 VARCHAR(100) AS
 
 DECLARE @SQL NVARCHAR(4000),@CAMPOS_SQL NVARCHAR(4000), @CAMPO VARCHAR(500), @SQL1 VARCHAR(500), @SQL2 VARCHAR(500)
